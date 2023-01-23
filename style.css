@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  color: #fafaf9;
 }
 .container {
   background-image: linear-gradient(#57534ed0, #44403cb8),
@@ -15,16 +14,15 @@
 .header-container {
   background-color: #404040;
   margin-bottom: 20px;
-  border: #292524 solid 5px;
 }
 .navigation-header {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 15px;
 }
-.nav-link,
-.castle-link {
+.nav-link {
   text-decoration: none;
+  color: #fafaf9;
 }
 
 /*Main*/
@@ -38,7 +36,7 @@
 }
 .main-title {
   text-align: center;
-
+  color: #fafaf9;
   grid-column: 1 / span 2;
   grid-row: 1;
 }
@@ -46,36 +44,54 @@
   grid-row: 2 / span 3;
   grid-column: 1;
 }
-/* Images and Paragraphs */
+/* Castles */
 .dover-img,
 .warkworth-img {
   border-radius: 30px;
-  box-shadow: 8px 5px 15px #e7e5e4b6;
+  box-shadow: 8px 5px 15px #292524;
   margin-bottom: 10px;
 }
 
+.castle-link {
+  color: #fafaf9;
+}
 .castle-dover,
 .castle-warkworth {
   margin-bottom: 30px;
   margin-left: 10px;
+  color: #fafaf9;
+  font-size: 20px;
 }
 
 /*Aside*/
 .aside-container {
   grid-column: 2;
   grid-row: 2 / span 3;
-  font-size: 20px;
-  background-color: #40404077;
-  padding: 20px 20px 20px;
+  font-size: 30px;
+  background-color: #e7e5e4;
+  color: #292524;
+  padding: 30px 30px 30px;
+  border-radius: 5px;
+  border: #292524 solid 5px;
 }
-
+.list-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.castle-list {
+  list-style: none;
+}
+.aside-link {
+  color: #292524;
+}
 /*Footer*/
 .container-footer {
   background: #404040;
-  border: #292524 solid 5px;
-  padding: 10px;
+
+  padding: 15px;
 }
 .copyright {
   font-style: italic;
   opacity: 0.8;
+  color: #fafaf9;
 }
