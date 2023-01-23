@@ -1,0 +1,28 @@
+/*General*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+.container {
+  background-image: linear-gradient(#57534ed0, #44403cb8),
+    url(./pictures/background.jpg);
+}
+/* Navigation*/
+.header-container {
+  margin-top: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+/*Main*/
+.main-title {
+  text-align: center;
+}
+/* Images */
+.dover-img,
+.wakworth-img {
+  border-radius: 30px;
+}
