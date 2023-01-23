@@ -1,28 +1,51 @@
 /*General*/
 * {
-  padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
   color: #fff;
 }
 .container {
   background-image: linear-gradient(#57534ed0, #44403cb8),
     url(./pictures/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /* Navigation*/
 .header-container {
   margin-top: 0;
+  background-color: #404040;
+  margin-bottom: 20px;
+  border: #292524 solid 5px;
 }
-
-.nav-link {
+.navigation-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.nav-link,
+.castle-link {
   text-decoration: none;
 }
+
 /*Main*/
+.main-container {
+  margin-bottom: 30px;
+}
 .main-title {
   text-align: center;
+  margin-bottom: 30px;
 }
-/* Images */
+/* Images and Paragraphs */
 .dover-img,
-.wakworth-img {
+.warkworth-img {
   border-radius: 30px;
+  box-shadow: 8px 5px 15px #e7e5e4b6;
+  margin-bottom: 10px;
+}
+
+.castle-dover,
+.castle-warkworth {
+  margin-bottom: 30px;
+  margin-left: 10px;
 }
