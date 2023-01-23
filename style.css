@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #fafaf9;
 }
 .container {
   background-image: linear-gradient(#57534ed0, #44403cb8),
@@ -13,7 +13,6 @@
 }
 /* Navigation*/
 .header-container {
-  margin-top: 0;
   background-color: #404040;
   margin-bottom: 20px;
   border: #292524 solid 5px;
@@ -31,10 +30,21 @@
 /*Main*/
 .main-container {
   margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
 .main-title {
   text-align: center;
-  margin-bottom: 30px;
+
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+.castles {
+  grid-row: 2 / span 3;
+  grid-column: 1;
 }
 /* Images and Paragraphs */
 .dover-img,
@@ -48,4 +58,24 @@
 .castle-warkworth {
   margin-bottom: 30px;
   margin-left: 10px;
+}
+
+/*Aside*/
+.aside-container {
+  grid-column: 2;
+  grid-row: 2 / span 3;
+  font-size: 20px;
+  background-color: #40404077;
+  padding: 20px 20px 20px;
+}
+
+/*Footer*/
+.container-footer {
+  background: #404040;
+  border: #292524 solid 5px;
+  padding: 10px;
+}
+.copyright {
+  font-style: italic;
+  opacity: 0.8;
 }
